@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SignUp Page</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		
+		form {
+			margin: 10% auto;
+			padding: 20px;
+			width: 300px;
+			background-color: #fff;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+		}
+		input[type="text"], input[type="password"], input[type="email"] {
+			width: 100%;
+			padding: 10px 0px;
+			margin: 5px 0;
+			border: none;
+			border-radius: 3px;
+			background-color: #f2f2f2;
+			box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+		}
+		input[type="submit"] {
+			display: block;
+			margin: 12px auto;
+			padding: 12px;
+			border: none;
+			border-radius: 3px;
+			background-color: #3707bb;
+			color: #fff;
+			font-size: 14px;
+			
+		}
+	</style>
+</head>
+<body>
+	<form action="/signup" method="POST">
+		<h2>Sign Up</h2>
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="name" required>
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email" required>
+		<label for="password">Password:</label>
+		<input type="password" id="password" name="password" required>
+		<input type="submit" value="Submit">
+	</form>
+</body>
+</html>
